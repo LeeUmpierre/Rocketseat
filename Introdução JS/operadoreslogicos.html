@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+       var sexo = 'M', idade = 19;
+
+       //AND
+       if(sexo === 'M' && idade >= 18){//Ambos verdadeiros
+           console.log("OK");
+       }
+       //OR
+       if(sexo === 'M' || idade <= 18){//Apenas um é necessario ser verdadeiro
+           console.log("OK")
+       }
+       //NOT
+       if(sexo != 'F'){// Diferença entre valores(negação)
+        console.log('OK');
+       }
+
+       //Armazenando o true/false em uma variavel
+       var masculino;
+       if(sexo == 'M'){
+           masculino = true;
+       }else{
+           masculino = false;
+       }
+
+       //OUTRA FORMA
+       var masc = (sexo == 'M');
+
+       console.log(masculino)
+       console.log(masc)
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com a DOM</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome"/>
+        <!--<input type="text" name="nome2" id="nome2"/>-->
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        //getElementsByTagName se tiver dois ou mais iguais precisa passar o index
+        //getElementById = pega pelo id da tag e getElementByClass pela class da tag
+        //querySelector = navega pela DOM até achar o elemento, retorna apenas o primeiro elemento que achar
+        //querySelectorAll = navega pela DOM até achar o elemnto, retorna uma lista dos quias ele encontra
+
+        /*
+        var inputElement = document.getElementById('nome');
+        var inputElement = document.getElementsByTagName('input'); 
+        var inputElement = document.getElementsByClassName('nome');
+        var inputElement = document.querySelector('body div#app input');
+        var inputElement = document.querySelector('input[name=nome]');
+        */
+
+        var inputElement = document.querySelector('input[name=nome]')
+        var btnElement = document.querySelector('button.botao')    
+
+        btnElement.onclick = () => {
+            let text = inputElement.value; //valor digitado dentro do campo
+
+            alert(text); 
+        }
+          
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidando com Elemetos</title>
+</head>
+<body>
+    <div id="app">
+        <input id= "nome"/>
+    </div>
+
+    <script>
+        //<a href= "www.youytube.com"> Acessar Link <a/>
+        //Mesma coisa
+        
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.youtube.com/watch?v=drVKZW_Vo7g&list=RDdrVKZW_Vo7g&start_radio=1')
+        linkElement.setAttribute('title', 'Solomun Something We All Adore')
+
+        var textElement = document.createTextNode('Acessar Link');
+        linkElement.appendChild(textElement);//appendChild add dentro de algo
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);//Retira o "filho" do "pai"
+
+    </script>
+    
+</body>
+</html>

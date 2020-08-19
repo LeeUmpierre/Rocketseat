@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Inline</title>
+</head>
+<body>
+    <div id="app">
+        <button onclick= "mostraAlerta()">Me pressione</button>
+        <input onkeydown="alerta()" />
+    </div>
+    <script>
+        //DOM arvore de elementos do HTML
+
+        let mostraAlerta = () => alert('Botão foi clicado');
+        let alerta = () => alert('Tecla pressionado')
+    </script>
+    
+</body>
+</html>

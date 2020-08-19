@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        // function nome (paramentro){bla}
+        function soma(numero1, numero2) {
+            var resultado = numero1 + numero2;
+
+            return resultado;//esse "resultado" só é visível dentro do escopo função
+        }
+
+        var resultado = soma (1, 2);
+        console.log(resultado);
+
+        //arrow function
+        //nome = (param) => {bla}
+        arrow = (num1,num2) => {
+            return num1+num2
+        }
+
+        var result = arrow(1,1);
+        console.log("Arrow: "+ result);
+
+        //let arrow = parametro => faz BLA (quando só tem um parametro n precisa de parenteses e sem '{}')
+    </script>
+</body>
+</html>
